@@ -136,6 +136,7 @@ body {
 }
 /* REMEMBER TO ADD VARIABLES*/
 html {
+  font-family: 'PT Sans Caption', sans-serif;
   font-size: 62.5%;
 }
 body {
@@ -166,6 +167,9 @@ header a {
     align-items: center;
     margin: 0rem 0rem 2rem;
   }
+}
+.title h1 {
+  font-family: 'Anton', sans-serif;
 }
 .title .title-img {
   width: 100rem;
@@ -234,6 +238,7 @@ header a {
   justify-content: center;
   font-weight: bold;
   font-size: 3rem;
+  font-family: 'Anton', sans-serif;
 }
 @media (max-width: 500px) {
   .mid-section h2 {
@@ -255,13 +260,15 @@ header a {
   font-size: 2.5rem;
   border: 0.3rem solid black;
   background-color: lightgrey;
+  padding: 0rem 1rem 0rem;
 }
 .mid-section .work-history-container {
   display: flex;
   flex-direction: column;
-  margin: 2rem 1rem 2rem;
+  margin: 6rem 1rem 6rem;
 }
 .mid-section .work-history-container h3 {
+  font-family: 'Anton', sans-serif;
   font-size: 3rem;
 }
 footer h2 {
@@ -269,17 +276,20 @@ footer h2 {
   display: flex;
   justify-content: center;
   font-size: 3rem;
+  font-family: 'Anton', sans-serif;
 }
 footer h3 {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
   margin: 2rem 0rem 1.5rem;
+  font-family: 'Anton', sans-serif;
 }
 footer .contact-info {
   display: flex;
   justify-content: space-evenly;
   font-size: 2.5rem;
+  font-family: 'Anton', sans-serif;
 }
 @media (max-width: 500px) {
   footer .contact-info {
