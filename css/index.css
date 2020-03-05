@@ -140,23 +140,41 @@ html {
 }
 body {
   font-size: 1.8rem;
-  background-color: palegoldenrod;
-  padding: 1%;
-}
-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  background-color: palegreen;
+  padding: 3%;
 }
 header a {
+  margin: 2rem 12rem 2rem;
   font-size: 3rem;
   color: black;
+}
+@media (max-width: 500px) {
+  header a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .title .my-name {
   display: flex;
   justify-content: center;
   font-size: 3rem;
+}
+@media (max-width: 500px) {
+  .title .my-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0rem 0rem 2rem;
+  }
+}
+.title .title-img {
+  width: 100rem;
+  margin: 2rem 15rem 5rem;
+}
+@media (max-width: 500px) {
+  .title .title-img {
+    display: none;
+  }
 }
 .title span {
   display: flex;
@@ -167,22 +185,49 @@ header a {
   display: flex;
   justify-content: center;
   width: 100rem;
-  margin: 0.8rem 16rem 3rem;
-  font-size: 2rem;
-  background-color: lightsalmon;
+  margin: 0.8rem 15rem 3rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .container {
+    display: flex;
+    justify-content: start;
+    margin: 0rem 3rem 2rem;
+  }
 }
 .container .intro {
+  background-color: lightgrey;
+  border: 0.3rem solid black;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  padding: 1.5rem;
+}
+@media (max-width: 500px) {
+  .container .intro {
+    width: 40rem;
+    margin: 0rem 0rem 0rem;
+  }
 }
 .mid-section {
-  background-color: palevioletred;
   display: flex;
 }
+@media (max-width: 500px) {
+  .mid-section {
+    flex-direction: column;
+  }
+}
 .mid-section .skills {
-  background-color: teal;
-  width: 125rem;
+  background-color: lightgrey;
+  border: 0.3rem solid black;
+  line-height: 5rem;
+  width: 135rem;
+}
+@media (max-width: 500px) {
+  .mid-section .skills {
+    width: 45rem;
+    align-items: start;
+    margin: 0rem 0.2rem 2rem;
+  }
 }
 .mid-section h2 {
   display: flex;
@@ -190,28 +235,37 @@ header a {
   font-weight: bold;
   font-size: 3rem;
 }
+@media (max-width: 500px) {
+  .mid-section h2 {
+    display: flex;
+    justify-content: start;
+    padding: 1.5rem;
+  }
+}
 .mid-section ul {
   list-style-position: inside;
-  list-style-type: circle;
+  list-style-type: square;
   font-size: 2.5rem;
   display: flex;
   flex-direction: column;
   align-content: center;
-  margin: 3.5rem 0rem 0rem;
+  margin: 3.5rem 1.4rem 0rem;
 }
 .mid-section .work-history {
   font-size: 2.5rem;
+  border: 0.3rem solid black;
+  background-color: lightgrey;
 }
 .mid-section .work-history-container {
   display: flex;
   flex-direction: column;
   margin: 2rem 1rem 2rem;
-  background-color: yellowgreen;
 }
 .mid-section .work-history-container h3 {
   font-size: 3rem;
 }
 footer h2 {
+  margin: 2.5rem 0rem 0rem;
   display: flex;
   justify-content: center;
   font-size: 3rem;
@@ -220,11 +274,15 @@ footer h3 {
   display: flex;
   justify-content: center;
   font-size: 2.5rem;
-  margin: 1rem 0rem 0rem;
+  margin: 2rem 0rem 1.5rem;
 }
 footer .contact-info {
   display: flex;
   justify-content: space-evenly;
-  margin: 2rem 0rem 0rem;
-  font-size: 3rem;
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  footer .contact-info {
+    justify-content: space-between;
+  }
 }
